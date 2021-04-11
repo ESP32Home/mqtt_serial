@@ -10,3 +10,7 @@ sends all mqtt "request" messages over the serial and received serial messages b
 ```json
 {"all":100}
 ```
+
+# Documentation
+
+* [Home Smart Mesh - M5Stack Atom](https://www.homesmartmesh.com//docs/microcontrollers/esp32/m5stack-atom/)
