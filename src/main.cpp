@@ -14,7 +14,7 @@
 #endif
 
 
-const char* host = "10.0.0.42";
+const char* host = "10.0.0.31";
 int port = 1883;
 const char *mqtt_client_id = "light_dimmer_mqtt";
 
@@ -57,8 +57,8 @@ void connect() {
   M5.dis.drawpix(0, CRGB(50,0,0));
 
   mqtt.subscribe(rx_topic);
-  //String payload = "{\"status\":\"running\",\"time\":"+String(millis())+"}";
-  //mqtt.publish(main_topic, payload.c_str());
+  String payload = "{\"status\":\"running\",\"time\":"+String(millis())+"}";
+  mqtt.publish(main_topic, payload.c_str());
 }
 
 void get_status(){
